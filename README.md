@@ -20,7 +20,7 @@ yarn add react-hook-viewport-visibility
 
 ```jsx
 import React from 'react'
-import useViewportSize from 'react-hook-viewport-visibility'
+import useViewportVisibility from 'react-hook-viewport-visibility'
 
 const ComponentWithViewportVisibility = () => {
   const viewportVisibility = useViewportVisibility()
