@@ -1,16 +1,24 @@
 import {useState, useEffect} from 'react'
 
 const useViewportVisibility = () => {
-  const [visibilityState, setVisibility] = useState(document.visibilityState)
+  const [visibilityState, setVisibility] =
+    useState(document.visibilityState)
 
   const handleVisibilityChange = () => {
     setVisibility(document.visibilityState)
   }
 
   useEffect(() => {
-    document.addEventListener('visibilitychange', handleVisibilityChange, true)
+    document.addEventListener(
+      'visibilitychange',
+      handleVisibilityChange,
+      true
+    )
     return () => {
-      document.removeEventListener('visibilitychange', handleVisibilityChange)
+      document.removeEventListener(
+        'visibilitychange',
+        handleVisibilityChange
+      )
     }
   }, [])
 
