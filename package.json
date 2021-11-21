@@ -1,6 +1,6 @@
 {
   "name": "react-hook-viewport-visibility",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React hook for accessing viewport visibility",
   "keywords": [
     "react",
